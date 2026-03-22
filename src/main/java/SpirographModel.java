@@ -5,12 +5,12 @@ public class SpirographModel {
     private int numSteps;
     private double anglePerStep;
 
-    public SpirographModel() {
-        largeRadius = 200;
-        smallRadius = 75;
-        penDistance = 55;
-        numSteps = 8000;
-        anglePerStep = 0.007;
+    public SpirographModel(int lr, int sr, int pd, int nSteps, double aps) {
+        largeRadius = lr;
+        smallRadius = sr;
+        penDistance = pd;
+        numSteps = nSteps;
+        anglePerStep = aps;
     }
 
     public int getLargeR() {
@@ -23,5 +23,13 @@ public class SpirographModel {
 
     public int getPenD() {
         return penDistance;
+    }
+
+    public int getNumSteps() {
+        return numSteps;
+    }
+
+    public double getAnglePerStep() {
+        return anglePerStep;
     }
 }
