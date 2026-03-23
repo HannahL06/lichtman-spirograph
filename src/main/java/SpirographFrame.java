@@ -26,9 +26,7 @@ public class SpirographFrame extends JFrame {
         JLabel pdLabel = new JLabel("Pen Distance: ");
 
 
-        SpirographController sc = new SpirographController(sv,
-                lrField, srField, pdField, nsField, apsField
-        );
+        SpirographController sc = new SpirographController(sv);
 
         button.addActionListener(new ActionListener() {
             @Override

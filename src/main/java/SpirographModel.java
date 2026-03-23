@@ -1,9 +1,9 @@
 public class SpirographModel {
-    private int largeRadius;
-    private int smallRadius;
-    private int penDistance;
-    private int numSteps;
-    private double anglePerStep;
+    private final int largeRadius;
+    private final int smallRadius;
+    private final int penDistance;
+    private final int numSteps;
+    private final double anglePerStep;
 
     public SpirographModel(int lr, int sr, int pd, int nSteps, double aps) {
         largeRadius = lr;
