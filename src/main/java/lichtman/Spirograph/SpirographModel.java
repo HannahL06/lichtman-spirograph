@@ -1,3 +1,5 @@
+package lichtman.Spirograph;
+
 public class SpirographModel {
     private final int largeRadius;
     private final int smallRadius;

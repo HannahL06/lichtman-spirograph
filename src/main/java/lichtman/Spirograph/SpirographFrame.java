@@ -1,3 +1,5 @@
+package lichtman.Spirograph;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

@@ -1,6 +1,6 @@
-import org.junit.jupiter.api.Test;
+package lichtman.Spirograph;
 
-import javax.swing.*;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
@@ -9,10 +9,9 @@ class SpirographControllerTest {
 
     @Test
     void draw() {
-        //int largeR, int smallR, int pd, int ns, double aps
         //given
         SpirographView sv = mock();
-        SpirographController sc = mock();
+        SpirographController sc = new SpirographController(sv);
         int largeR = 200;
         int smallR = 75;
         int penDistance = 55;

@@ -1,4 +1,4 @@
-import javax.swing.*;
+package lichtman.Spirograph;
 
 public class SpirographController {
     private final SpirographView sv;

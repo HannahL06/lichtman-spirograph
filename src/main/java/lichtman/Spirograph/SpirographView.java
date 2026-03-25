@@ -1,3 +1,5 @@
+package lichtman.Spirograph;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -22,20 +24,19 @@ public class SpirographView extends JComponent {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        //g.translate(0, getHeight());
+        g.translate((int) (getWidth() / 2.0), (int) (getHeight() / 2.0));
 
-        g.setColor(Color.PINK);
+        Color drawColor = new Color(215, 167, 212);
+        g.setColor(drawColor);
 
         double radiiDif = sm.getLargeR() - sm.getSmallR();
-        double centerX = getWidth() / 2.0;
-        double centerY = getHeight() / 2.0;
         for (double i = 0; i < sm.getNumSteps(); i++) {
             double time = i * sm.getAnglePerStep();
             x = radiiDif * Math.cos(time) + sm.getPenD()
                     * Math.cos(radiiDif * time/sm.getSmallR());
             y = radiiDif * Math.sin(time) - sm.getPenD()
                     * Math.sin(radiiDif * time/sm.getSmallR());
-            g.drawLine((int) (centerX + x), (int) (centerY - y), (int) x, (int) -y);
+            g.drawLine((int) x, (int) -y, (int) x, (int) -y);
         }
     }
 
