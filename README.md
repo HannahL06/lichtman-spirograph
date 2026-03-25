@@ -1,6 +1,6 @@
 ### Spirograph Animation
 
-A GUI that animates the drawing of a spirograph depending on the user-provided size.
+A GUI that draws a spirograph depending on the user-provided size.
 
 ### Screenshots
 
