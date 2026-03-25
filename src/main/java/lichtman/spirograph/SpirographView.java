@@ -33,9 +33,9 @@ public class SpirographView extends JComponent {
         for (double i = 0; i < sm.getNumSteps(); i++) {
             double time = i * sm.getAnglePerStep();
             x = radiiDif * Math.cos(time) + sm.getPenD()
-                    * Math.cos(radiiDif * (time / sm.getSmallR()) );
+                    * Math.cos(radiiDif * time / sm.getSmallR());
             y = radiiDif * Math.sin(time) - sm.getPenD()
-                    * Math.sin(radiiDif * (time / sm.getSmallR()) );
+                    * Math.sin(radiiDif * time / sm.getSmallR());
             g.drawLine((int) x, (int) -y, (int) x, (int) -y);
         }
     }
