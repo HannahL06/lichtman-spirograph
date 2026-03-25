@@ -12,7 +12,7 @@ public class SpirographFrame extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         setLayout(new GridBagLayout());
-        SpirographView sv = new SpirographView();
+        SpirographView sView = new SpirographView();
 
         final JLabel lrLabel = new JLabel("Outer Radius: ");
         final JLabel srLabel = new JLabel("Inner Radius: ");
@@ -27,16 +27,16 @@ public class SpirographFrame extends JFrame {
         JTextField apsField = new JTextField("0.007");
         JButton button = new JButton("Draw");
 
-        SpirographController sc = new SpirographController(sv);
+        SpirographController sController = new SpirographController(sView);
 
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                sc.draw(
-                        Integer.parseInt(lrField.getText()),
-                        Integer.parseInt(srField.getText()),
-                        Integer.parseInt(pdField.getText()),
-                        Integer.parseInt(nsField.getText()),
+                sController.draw(
+                        Double.parseDouble(lrField.getText()),
+                        Double.parseDouble(srField.getText()),
+                        Double.parseDouble(pdField.getText()),
+                        Double.parseDouble(nsField.getText()),
                         Double.parseDouble(apsField.getText())
                 );
             }
@@ -107,7 +107,7 @@ public class SpirographFrame extends JFrame {
         constraints.fill = GridBagConstraints.BOTH;
         constraints.weightx = 1;
         constraints.weighty = 1;
-        add(sv, constraints);
+        add(sView, constraints);
     }
 
     public static void main(String[] args) {

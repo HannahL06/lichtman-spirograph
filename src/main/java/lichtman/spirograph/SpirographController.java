@@ -1,15 +1,14 @@
 package lichtman.spirograph;
 
 public class SpirographController {
-    private final SpirographView sv;
+    private final SpirographView sView;
 
-    public SpirographController(SpirographView sv) {
-        this.sv = sv;
+    public SpirographController(SpirographView view) {
+        sView = view;
     }
 
-    public void draw(int largeR, int smallR, int pd, int ns, double aps) {
-        //SpirographModel newSM = new SpirographModel(largeR, smallR, pd, ns, aps);
-        sv.setSpirographModel(new SpirographModel(
-                largeR, smallR, pd, ns, aps));
+    public void draw(double largeR, double smallR, double penDistance, double numSteps, double anglePerStep) {
+        sView.setSpirographModel(new SpirographModel(
+                largeR, smallR, penDistance, numSteps, anglePerStep));
     }
 }

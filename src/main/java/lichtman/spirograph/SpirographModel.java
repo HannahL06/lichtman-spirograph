@@ -1,33 +1,33 @@
 package lichtman.spirograph;
 
 public class SpirographModel {
-    private final int largeRadius;
-    private final int smallRadius;
-    private final int penDistance;
-    private final int numSteps;
+    private final double largeRadius;
+    private final double smallRadius;
+    private final double penDistance;
+    private final double numSteps;
     private final double anglePerStep;
 
-    public SpirographModel(int lr, int sr, int pd, int nSteps, double aps) {
-        largeRadius = lr;
-        smallRadius = sr;
-        penDistance = pd;
-        numSteps = nSteps;
-        anglePerStep = aps;
+    public SpirographModel(double largeRadius, double smallRadius, double penDistance, double numSteps, double anglePerStep) {
+        this.largeRadius = largeRadius;
+        this.smallRadius = smallRadius;
+        this.penDistance = penDistance;
+        this.numSteps = numSteps;
+        this.anglePerStep = anglePerStep;
     }
 
-    public int getLargeR() {
+    public double getLargeR() {
         return largeRadius;
     }
 
-    public int getSmallR() {
+    public double getSmallR() {
         return smallRadius;
     }
 
-    public int getPenD() {
+    public double getPenD() {
         return penDistance;
     }
 
-    public int getNumSteps() {
+    public double getNumSteps() {
         return numSteps;
     }
 
