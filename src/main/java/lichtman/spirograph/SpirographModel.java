@@ -7,7 +7,8 @@ public class SpirographModel {
     private final double numSteps;
     private final double anglePerStep;
 
-    public SpirographModel(double largeRadius, double smallRadius, double penDistance, double numSteps, double anglePerStep) {
+    public SpirographModel(double largeRadius, double smallRadius, double penDistance,
+                           double numSteps, double anglePerStep) {
         this.largeRadius = largeRadius;
         this.smallRadius = smallRadius;
         this.penDistance = penDistance;
