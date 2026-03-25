@@ -8,7 +8,8 @@ public class SpirographController {
     }
 
     public void draw(int largeR, int smallR, int pd, int ns, double aps) {
-        SpirographModel newSM = new SpirographModel(largeR, smallR, pd, ns, aps);
-        sv.setSpirographModel(newSM);
+        //SpirographModel newSM = new SpirographModel(largeR, smallR, pd, ns, aps);
+        sv.setSpirographModel(new SpirographModel(
+                largeR, smallR, pd, ns, aps));
     }
 }

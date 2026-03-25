@@ -32,4 +32,15 @@ public class SpirographModel {
     public double getAnglePerStep() {
         return anglePerStep;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        SpirographModel that = (SpirographModel) o;
+        return largeRadius == that.largeRadius
+                && smallRadius == that.smallRadius
+                && penDistance == that.penDistance
+                && numSteps == that.numSteps
+                && Double.compare(anglePerStep, that.anglePerStep) == 0;
+    }
 }
