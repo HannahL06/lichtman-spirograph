@@ -8,7 +8,7 @@ public class SpirographView extends JComponent {
     private double x;
     private double y;
 
-    public SpirographView () {
+    public SpirographView() {
         sm = new SpirographModel(200, 75, 55, 8000, 0.007);
         x = 0;
         y = 0;
