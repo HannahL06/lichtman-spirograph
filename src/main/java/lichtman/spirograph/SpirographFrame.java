@@ -1,4 +1,4 @@
-package lichtman.Spirograph;
+package lichtman.spirograph;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,19 +14,18 @@ public class SpirographFrame extends JFrame {
         setLayout(new GridBagLayout());
         SpirographView sv = new SpirographView();
 
+        final JLabel lrLabel = new JLabel("Outer Radius: ");
+        final JLabel srLabel = new JLabel("Inner Radius: ");
+        final JLabel pdLabel = new JLabel("Pen Distance: ");
+        final JLabel nsLabel = new JLabel("Number of Steps: ");
+        final JLabel apsLabel = new JLabel("Angle Per Step: ");
+
         JTextField lrField = new JTextField("200");
         JTextField srField = new JTextField("75");
         JTextField pdField = new JTextField("55");
         JTextField nsField = new JTextField("8000");
         JTextField apsField = new JTextField("0.007");
         JButton button = new JButton("Draw");
-
-        JLabel nsLabel = new JLabel("Number of Steps: ");
-        JLabel apsLabel = new JLabel("Angle Per Step: ");
-        JLabel lrLabel = new JLabel("Outer Radius: ");
-        JLabel srLabel = new JLabel("Inner Radius: ");
-        JLabel pdLabel = new JLabel("Pen Distance: ");
-
 
         SpirographController sc = new SpirographController(sv);
 

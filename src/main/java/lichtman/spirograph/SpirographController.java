@@ -1,4 +1,4 @@
-package lichtman.Spirograph;
+package lichtman.spirograph;
 
 public class SpirographController {
     private final SpirographView sv;

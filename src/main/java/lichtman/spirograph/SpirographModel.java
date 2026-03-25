@@ -1,4 +1,4 @@
-package lichtman.Spirograph;
+package lichtman.spirograph;
 
 public class SpirographModel {
     private final int largeRadius;
@@ -37,7 +37,7 @@ public class SpirographModel {
 
     @Override
     public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
+        if (o == null || getClass() != o.getClass()) { return false; }
         SpirographModel that = (SpirographModel) o;
         return largeRadius == that.largeRadius
                 && smallRadius == that.smallRadius

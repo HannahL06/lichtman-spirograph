@@ -1,4 +1,4 @@
-package lichtman.Spirograph;
+package lichtman.spirograph;
 
 import org.junit.jupiter.api.Test;
 
